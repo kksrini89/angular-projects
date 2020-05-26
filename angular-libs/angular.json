@@ -124,7 +124,7 @@
         }
       }
     },
-    "AngularReactiveSpinner": {
+    "angular-reactive-spinner": {
       "projectType": "library",
       "root": "projects/angular-reactive-spinner",
       "sourceRoot": "projects/angular-reactive-spinner/src",
@@ -156,6 +156,46 @@
             "tsConfig": [
               "projects/angular-reactive-spinner/tsconfig.lib.json",
               "projects/angular-reactive-spinner/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-reactive-message": {
+      "projectType": "library",
+      "root": "projects/angular-reactive-message",
+      "sourceRoot": "projects/angular-reactive-message/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-reactive-message/tsconfig.lib.json",
+            "project": "projects/angular-reactive-message/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-reactive-message/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-reactive-message/src/test.ts",
+            "tsConfig": "projects/angular-reactive-message/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-reactive-message/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-reactive-message/tsconfig.lib.json",
+              "projects/angular-reactive-message/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

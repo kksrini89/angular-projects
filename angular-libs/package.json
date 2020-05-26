@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-angular-reactive-spinner": "ng build AngularReactiveSpinner",
-    "build-angular-reactive-spinner:watch": "ng build AngularReactiveSpinner --watch"
+    "build-angular-reactive-spinner": "ng build angular-reactive-spinner",
+    "build-angular-reactive-message": "ng build angular-reactive-message",
+    "build-angular-reactive-spinner:watch": "ng build angular-reactive-spinner --watch",
+    "build-angular-reactive-message:watch": "ng build angular-reactive-message --watch"
   },
   "private": true,
   "dependencies": {

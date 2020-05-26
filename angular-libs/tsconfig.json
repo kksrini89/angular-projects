@@ -19,6 +19,10 @@
       "angular-reactive-spinner": [
         "dist/angular-reactive-spinner/angular-reactive-spinner",
         "dist/angular-reactive-spinner"
+      ],
+      "angular-reactive-message": [
+        "dist/angular-reactive-message/angular-reactive-message",
+        "dist/angular-reactive-message"
       ]
     }
   },

@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularReactiveSpinnerModule } from 'angular-reactive-spinner';
+import { AngularReactiveMessageModule } from 'angular-reactive-message';
 
 import { AppComponent } from './app.component';
-import { NgbModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularReactiveMessageService } from 'projects/angular-reactive-message/src/public-api';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { NgbModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     NgbModule,
-    AngularReactiveSpinnerModule
+    AngularReactiveSpinnerModule,
+    AngularReactiveMessageModule
   ],
-  providers: [],
+  providers: [AngularReactiveMessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
